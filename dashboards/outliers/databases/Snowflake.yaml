@@ -1,0 +1,13 @@
+database_name: Snowflake
+sqlalchemy_uri: ${SNOWFLAKE_URI}
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: true
+extra:
+  allows_virtual_table_explore: true
+uuid: 4ac48784-8a3a-4c32-a2bf-f36af635c5b9
+version: 1.0.0
