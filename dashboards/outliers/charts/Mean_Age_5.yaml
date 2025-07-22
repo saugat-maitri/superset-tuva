@@ -1,0 +1,38 @@
+slice_name: Mean Age
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 2__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: CAST(AVG(AGE) as INTEGER)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: CAST(AVG(AGE) as INTEGER)
+    optionName: metric_rbdd7hl2gco_ytd0r679tk
+  adhoc_filters: []
+  subheader: Mean Age
+  header_font_size: 0.4
+  subheader_font_size: 0.2
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"CAST(AVG(AGE)
+  as INTEGER)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"CAST(AVG(AGE)
+  as INTEGER)","optionName":"metric_rbdd7hl2gco_ytd0r679tk"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"2__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"CAST(AVG(AGE)
+  as INTEGER)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"CAST(AVG(AGE)
+  as INTEGER)","optionName":"metric_rbdd7hl2gco_ytd0r679tk"},"adhoc_filters":[],"subheader":"Mean
+  Age","header_font_size":0.4,"subheader_font_size":0.2,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: e3db0ea5-d688-4833-95ab-35c7185acd42
+version: 1.0.0
+dataset_uuid: babcd9b5-4370-42a4-b76d-e3b27dc61e33

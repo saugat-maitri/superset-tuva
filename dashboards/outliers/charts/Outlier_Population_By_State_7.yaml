@@ -1,0 +1,73 @@
+slice_name: Outlier Population By State
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 2__table
+  viz_type: echarts_timeseries_bar
+  x_axis: STATE
+  time_grain_sqla: P1D
+  x_axis_sort: "100.0 * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT\
+    \ MEMBER_ID)) OVER ()"
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - expressionType: SQL
+    sqlExpression: "100.0 * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT\
+      \ MEMBER_ID)) OVER ()"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: "100.0 * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID))\
+      \ OVER ()"
+    optionName: metric_yx73izetlw_kg3ng7hedd
+  groupby: []
+  adhoc_filters: []
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: horizontal
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"STATE","label":"STATE","expressionType":"SQL"}],"metrics":[{"expressionType":"SQL","sqlExpression":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","optionName":"metric_yx73izetlw_kg3ng7hedd"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","optionName":"metric_yx73izetlw_kg3ng7hedd"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["STATE"],"columns":[],"aggregates":{"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"sort","options":{"by":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","ascending":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"2__table","viz_type":"echarts_timeseries_bar","x_axis":"STATE","time_grain_sqla":"P1D","x_axis_sort":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"expressionType":"SQL","sqlExpression":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"100.0
+  * COUNT(DISTINCT MEMBER_ID) \r\n       / SUM(COUNT(DISTINCT MEMBER_ID)) OVER ()","optionName":"metric_yx73izetlw_kg3ng7hedd"}],"groupby":[],"adhoc_filters":[],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"horizontal","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"rich_tooltip":true,"showTooltipTotal":true,"showTooltipPercentage":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 727babfe-2ae2-4627-967e-646a18d1cd2e
+version: 1.0.0
+dataset_uuid: babcd9b5-4370-42a4-b76d-e3b27dc61e33

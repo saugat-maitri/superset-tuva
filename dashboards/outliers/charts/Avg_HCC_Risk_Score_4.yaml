@@ -1,0 +1,38 @@
+slice_name: Avg HCC Risk Score
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 2__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: ROUND(AVG(V24_RISK_SCORE), 2)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: ROUND(AVG(V24_RISK_SCORE), 2)
+    optionName: metric_0l1cdj9tbs9c_u89yhjy498g
+  adhoc_filters: []
+  subheader: Avg HCC Risk Score
+  header_font_size: 0.4
+  subheader_font_size: 0.2
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"ROUND(AVG(V24_RISK_SCORE),
+  2)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"ROUND(AVG(V24_RISK_SCORE),
+  2)","optionName":"metric_0l1cdj9tbs9c_u89yhjy498g"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"2__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"ROUND(AVG(V24_RISK_SCORE),
+  2)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"ROUND(AVG(V24_RISK_SCORE),
+  2)","optionName":"metric_0l1cdj9tbs9c_u89yhjy498g"},"adhoc_filters":[],"subheader":"Avg
+  HCC Risk Score","header_font_size":0.4,"subheader_font_size":0.2,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: b5b63ebb-0f66-4a5e-954d-30a95183728f
+version: 1.0.0
+dataset_uuid: babcd9b5-4370-42a4-b76d-e3b27dc61e33

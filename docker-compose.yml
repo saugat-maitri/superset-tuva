@@ -10,10 +10,6 @@ services:
       - SNOWFLAKE_URI=${SNOWFLAKE_URI}
     ports:
       - "8088:8088"
-    volumes:
-      - ./superset_config.py:/app/pythonpath/superset_config.py
-      - ./dashboards:/app/dashboards
-      - ./scripts:/app/scripts
     command: |
       bash -c "
         pip install snowflake-sqlalchemy pyyaml &&
@@ -24,6 +20,9 @@ services:
         echo 'Admin user created' &&
         superset init &&
         echo 'Superset initialized' &&
+        # TODO: This is very hacky and works only for the outliers dashboard, change this.
+        SNOWFLAKE_URI=\"$SNOWFLAKE_URI\" envsubst < /app/dashboards/outliers/databases/Snowflake.yaml > /app/dashboards/outliers/databases/Snowflake.yaml.tmp &&
+        mv /app/dashboards/outliers/databases/Snowflake.yaml.tmp /app/dashboards/outliers/databases/Snowflake.yaml &&
         /app/scripts/import_dashboards.sh &&
         superset run -p 8088 --with-threads --reload --debugger --host=0.0.0.0
       "
